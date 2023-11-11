@@ -1,0 +1,277 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    min-height: 100%;
+    width: 100%;
+    background-color: #655C4A;
+    padding: 3vw 5vw;
+}
+
+#header{
+    height: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.second-part{
+    gap: 2rem;
+}
+
+.navbar-link{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#hero{
+    min-height: calc(80vh - 30px);
+    margin-top: 50px;
+}
+
+#left{
+    width: 50%;
+    min-height: 50vh;
+    padding-left: 12rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#inner-left{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: 3;
+}
+
+#inner-left > h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+#line{
+    display: block;
+    height: 1px;
+    width: 10%;
+    background-color: #fff;
+}
+
+#txt{
+    margin-block: 6rem;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#txt-left{
+    width: 20%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+#txt-left > h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: end;
+}
+
+#txt-right{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#txt-right > h1{
+    font-size: 10rem;
+    line-height: 10rem;
+    font-family: poppins;
+    font-weight: 100;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: left;
+}
+
+#icons{
+    width: 100%;
+    gap: 1rem;
+}
+
+#icons > i{
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 1.6rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#image-div{
+    height: 100%;
+    width: 70%;
+    position: relative;
+    z-index: 2;
+}
+
+#circle{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%,-50%);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #F7FF4C;
+}
+
+#circle > i{
+    color: #000;
+}
+
+#image-div > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#links{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#links > a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+#footer{
+    width: 100%;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+#footer > a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+
+    /* Responsiveness  */
+
+    /* Desktop  */
+
+    @media (max-width:1250px) {
+    
+        html{
+            font-size: 56.25%;
+        }
+    
+    }
+
+    @media (max-width:1000px) {
+
+        #hero{
+            margin: 0;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        #left{
+            width: 100%;
+            padding: 0;
+        }
+
+        #txt{
+            flex-direction: column;
+            margin-block: 2rem;
+            gap: 2rem;
+        }
+
+        #txt-right{
+            gap: 5rem;
+        }
+
+        #icons{
+            justify-content: flex-start;
+        }
+
+        #right{
+            width: 100%;
+        }
+
+        #image-div{
+            width: 90%;
+        }
+
+        #links{
+            display: none;
+        }
+    
+    }
+
+        /* Mobiles  */
+
+    @media (max-width:500px) {
+
+        html{
+            font-size: 46% ;
+        }
+    }
+
+    @media (max-width:350px) {
+
+        #left{
+            min-height: 70vh;
+        }
+
+        #txt-left{
+            width: 30%;
+        }
+
+        #txt-right > h1{
+            font-size: 8rem;
+            line-height: 8rem;
+        }
+
+    }
